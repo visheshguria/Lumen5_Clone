@@ -1,6 +1,6 @@
-Vishesh Guria
-Aditya Pratap Singh
-Dileep Kumar Yadav
-Swagat Sahu
+Vishesh Guria      ---------- homepage, navbar, footer
+Aditya Pratap Singh---------- after login page 
+Dileep Kumar Yadav ---------- pricing page
+Swagat Sahu				 ---------- login  & signup 
 Ramkrashna
-Swati
+Swati						 ---------- enterprise page
