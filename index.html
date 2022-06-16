@@ -1,62 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumen5 - Video Maker | Create Videos Online in Minutes</title>
     <style>
-        body{
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
         }
-        #master{
+
+        #master {
             border: solid red;
-            width:70%;
+            width: 1330px;
             margin: auto;
         }
-        #div1{
-            width:80%;
+
+        #div1 {
+            border: solid green;
+            width: 80%;
             margin: auto;
-            display:flex;
+            display: flex;
             justify-content: space-between;
-            border:solid green;
-            padding:30px;
-            gap:30px;
-        }
-        #div1>div:first-child{
-            height:70%;
-            border:solid blue;
-            padding:30px;
-            width:30%;
+            padding: 30px;
+            gap: 30px;
+            margin-bottom: 100px;
+            ;
         }
 
-        #div1>div:last-child{
-            border:solid blue;
+        #div1>div:first-child {
+            /* height: 80%; */
+            /* border: solid yellow; */
+            padding: 30px;
+            width: 35%;
+            padding-top: 0px;
+            ;
         }
 
-        #div1>div:last-child>img{
-            width:550px;
+        #div1>div:first-child>h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 37px;
+            line-height: 50px;
+            ;
         }
 
+        #div1>div:first-child>p {
+            font-size: 21px;
+            margin-bottom: 50px;
+            margin-right: 50px;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        #div1>div:last-child>img {
+            width: 550px;
+        }
+
+        #butn1 {
+            font-size: 20px;
+            background-color: rgb(88, 70, 246);
+            color: white;
+            border-radius: 50px;
+            padding: 12px;
+            border: 1px solid rgb(88, 70, 246);
+        }
+
+        #butn1:hover {
+            background-color: #4527a0;
+            cursor: pointer;
+        }
+
+        #div2 {
+            width: 90%;
+            margin: auto;
+            border: solid green;
+            text-align: center;
+        }
+
+        #div2>div {
+            /* border: solid blue; */
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+        }
+
+        #div2>p {
+            font-size: 21px;
+            ;
+        }
     </style>
 </head>
+
 <body>
     <div id="master">
         <div id="div1">
             <div>
-                <h1>Video maker built to
-                    supercharge your
-                    content strategy</h1>
-                <p>Easily make videos for
-                    content marketing,
-                    thought leadership, and
-                    brand awareness in a snap.</p>
+                <h1>Video maker built to supercharge your content strategy</h1>
+                <p>Easily make videos for <b>content marketing, thought leadership, and brand awareness</b>
+                    in a snap.</p>
                 <button id="butn1">Sign up free</button>
             </div>
             <div>
                 <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-hero.png" alt="">
             </div>
         </div>
+
+        <div id="div2">
+            <p>Over 6 million videos created by thousands of businesses</p>
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-salesforce-color.png"
+                    alt="">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-pwc-color.png" alt="">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-siemens-color1.png"
+                    alt="">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-kpmg-color.png" alt="">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-merk-color.png" alt="">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-color.png" alt="">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-mitsubishi-color.png"
+                    alt="">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-color.png" alt="">
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
