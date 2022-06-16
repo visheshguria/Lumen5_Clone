@@ -1,0 +1,141 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* navabar css goes here */
+#navbar {
+  position: sticky;
+  top: 0px;
+  width: auto;
+  height: 10vh;
+  border-bottom: 1px solid rgb(222, 202, 202);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+#logo{
+  height: 60%;
+}
+#logo:hover{
+  cursor: pointer;
+}
+#feat {
+  width: 40%;
+  display: flex;
+  gap:20px;
+  height: 75%;
+  overflow: hidden;
+}
+#feat button:hover{
+  cursor: pointer;
+}
+#feat>button:hover{
+  color: white;
+  background-color: blue;
+}
+#search{
+    height: 100%;
+    border-bottom: 1px solid black;
+}
+#search>i,#search>input{
+    height: 100%;
+}
+#search>input{
+   border: none;
+    margin-left: 15px;
+    width: 200px;
+    font-size: 16px;
+}
+#upgrade{
+    border-radius:25px;
+    width: 100px;
+    background-color: white;
+    color:blue;
+    border:1px solid blue;
+}
+#user{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left:20px ;
+    border-left:1px solid grey ;
+}
+#user>button:first-child{
+    color:grey;
+    background-color: transparent;
+    border: none;
+    height: 25px;
+    width: 25px;
+}
+#user>button:last-child{
+    border-radius: 50%;
+    border: 1px solid silver;
+    width:30px;
+    height: 30px;
+    
+}
+
+ 
+/* category css goes here */
+
+#category {
+  position: sticky;
+  top: 10vh;
+  left: 0px;
+  width: 20vw;
+  height: 90vh;
+  border-right: 1px solid rgb(222, 202, 202);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  font-size: 16px;
+}
+#category > div{
+  display:flex ;
+  gap: 20px;
+  padding: 10px 20px;
+}
+#category > div>i{
+  width: 20px;
+  font-size: 20px;
+}
+#category > div:hover{
+  cursor: pointer;
+  background-color: rgb(250, 249, 249);
+}
+#category > div:last-child {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#category > div:last-child:hover{
+ cursor: auto;
+ background-color: #fff;
+}
+#category > div:last-child>button{
+  border-radius: 15px;
+  padding: 5px 8px;
+  color: grey;
+  border: 1px solid grey;
+  font-size: 12px;
+  background-color: transparent;
+}
+#category > div:last-child>button:hover{
+  cursor: pointer;
+  background-color: rgb(228, 225, 225);
+}
+
+#usersdata {
+  background-color: #fafafb;
+  position: fixed;
+  left: 20vw;
+  top: 10vh;
+  width: 80vw;
+  height: 90vh;
+}
