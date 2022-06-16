@@ -4,13 +4,13 @@ function logofunc() {
     window.location.href = "index.html"
 }
 
-doucument.querySelector("#create").addEventListener("click", createfunction);
+document.querySelector("#create").addEventListener("click", createfunction);
 
 function createfunction() {
     window.location.href = "create.html"
 }
 
-doucument.querySelector("#pricing").addEventListener("click", pricingfunction);
+document.querySelector("#pricing").addEventListener("click", pricingfunction);
 
 function pricingfunction() {
     window.location.href = "pricing.html"
@@ -22,20 +22,20 @@ function enterprisefunction() {
     window.location.href = "enterprise.html"
 }
 
-doucument.querySelector("#casestudy").addEventListener("click", casefunction);
+document.querySelector("#casestudy").addEventListener("click", casefunction);
 
 function casefunction() {
     window.location.href = "casestudy.html"
 }
 
-doucument.querySelector("#btn1").addEventListener("click", loginfunction);
+document.querySelector("#btn1").addEventListener("click", loginfunction);
 
 function loginfunction() {
     window.location.href = "login.html"
 }
 
-doucument.querySelector("#btn2").addEventListener("click", signupfunction);
+document.querySelector("#btn2").addEventListener("click", signupfunction);
 
-function loginfunction() {
+function signupfunction() {
     window.location.href = "signup.html"
 }
