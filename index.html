@@ -14,13 +14,13 @@
         }
 
         #master {
-            border: solid red;
+            /* border: solid red; */
             width: 1330px;
             margin: auto;
         }
 
         #div1 {
-            border: solid green;
+            /* border: solid green; */
             width: 80%;
             margin: auto;
             display: flex;
@@ -60,11 +60,11 @@
         }
 
         #butn1 {
-            font-size: 20px;
+            font-size:18px;
             background-color: rgb(88, 70, 246);
             color: white;
             border-radius: 50px;
-            padding: 12px;
+            padding: 15px;
             border: 1px solid rgb(88, 70, 246);
         }
 
@@ -76,7 +76,7 @@
         #div2 {
             width: 90%;
             margin: auto;
-            border: solid green;
+            /* border: solid green; */
             text-align: center;
         }
 
@@ -92,7 +92,7 @@
         }
 
         #div3 {
-            border: solid green;
+            /* border: solid green; */
             text-align: center;
             margin-top: 100px;
         }
@@ -109,7 +109,7 @@
         #viddiv {
             width: 90%;
             margin: auto;
-            border: solid blue;
+            /* border: solid blue; */
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 200px);
@@ -126,6 +126,16 @@
 
         .clip {
             width: 100%;
+        }
+        .playicon{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .playicon img{
+            width: 30%;
         }
     </style>
 </head>
@@ -168,6 +178,9 @@
             </div>
 
             <div id="viddiv">
+                <div class="playicon">
+                    <img src="https://img.icons8.com/dusk/344/play-button-circled--v1.png" alt="">
+                </div>
                 <div class="videos">
                     <video class="clip" src="https://storage.googleapis.com/lumen5-site-images/prev_tracer.mp4"
                         type="video/mp4" loop></video>
