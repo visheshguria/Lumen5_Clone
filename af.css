@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+body{
+  background-color: rgb(243, 240, 240);
+  font-family: 'Poppins', sans-serif;
 }
 /* navabar css goes here */
 #navbar {
@@ -10,79 +16,132 @@
   width: auto;
   height: 10vh;
   border-bottom: 1px solid rgb(222, 202, 202);
-
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
 }
-#logo{
+#logo {
   height: 60%;
 }
-#logo:hover{
+#logo:hover {
   cursor: pointer;
 }
 #feat {
   width: 40%;
   display: flex;
-  gap:20px;
+  gap: 20px;
   height: 75%;
-  overflow: hidden;
+  /* overflow: hidden; */
+  /* border: 2px solid red; */
 }
-#feat button:hover{
+#feat button:hover {
   cursor: pointer;
 }
-#feat>button:hover{
+#feat > button:hover {
   color: white;
-  background-color: blue;
+  background-color: rgb(88,70,246);
 }
-#search{
-    height: 100%;
-    border-bottom: 1px solid black;
+#search {
+  height: 100%;
+  border-bottom: 1px solid black;
 }
 #search>i,#search>input{
     height: 100%;
 }
-#search>input{
-   border: none;
-    margin-left: 15px;
-    width: 200px;
-    font-size: 16px;
+#searchbar {
+  border: none;
+  margin-left: 15px;
+  width: 200px;
+  font-size: 16px;
+  box-shadow: none;
 }
-#upgrade{
-    border-radius:25px;
-    width: 100px;
-    background-color: white;
-    color:blue;
-    border:1px solid blue;
+#searchbar:focus {
+  outline: none;
 }
-#user{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-left:20px ;
-    border-left:1px solid grey ;
+#upgrade {
+  border-radius: 25px;
+  width: 100px;
+  background-color: white;
+  color: rgb(88,70,246);
+  border: 1px solid rgb(88,70,246);
 }
-#user>button:first-child{
-    color:grey;
-    background-color: transparent;
-    border: none;
-    height: 25px;
-    width: 25px;
+#dropdown {
+  height: 100%;
+  padding-left: 20px;
+  display: flex;
+  border-left: 1px solid grey;
+  align-items: center;
 }
-#user>button:last-child{
-    border-radius: 50%;
-    border: 1px solid silver;
-    width:30px;
-    height: 30px;
-    
+#dropdown ul {
+  display: inline-flex;
+  list-style:none;
+  align-items: center;
+  gap: 20px;
 }
 
- 
+
+#dropdown >ul>li>a{
+  text-decoration: none;
+  color:gray;
+  font-size: 18px;
+}
+#dropdown >ul>li:nth-child(2)>a{
+  border: 1px solid silver;
+  background-color:rgb(243, 240, 240);
+  border-radius: 50%;
+ padding: 0px 6px;
+}
+.dropdown-content{
+  display: none;
+}
+#dropdown ul li:hover>.dropdown-content{
+  display: block;
+  position: absolute;
+  width: 25vw;
+  background-color:rgba(255, 255, 255, .5);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: -250px;
+}
+#dropdown ul li:hover>.dropdown-content ul{
+  display: block;
+}
+.dropdown-content ul li:first-child {
+  padding: 10px 20px;
+  text-align: left;
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+}
+.dropdown-content ul li a{
+  padding: 10px 20px;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+.dropdown-content ul li a>span{
+  color: black;
+}
+.dropdown-content>ul>li:nth-child(2),.dropdown-content>ul>li:nth-child(6){
+  border-bottom: 1px solid rgb(204, 203, 203);
+}
+.dropdown-content>ul>li:hover{
+  cursor: pointer;
+  background-color: rgb(228, 225, 225);
+}
+.dropdown-content>ul>li>a>i{
+  box-sizing: border-box;
+  width: 20px;
+  
+}
 /* category css goes here */
 
-#category {
+#category{
+  background-color: #fff;
   position: sticky;
   top: 10vh;
   left: 0px;
@@ -95,16 +154,17 @@
   color: gray;
   font-size: 16px;
 }
-#category > div{
-  display:flex ;
+#category > div {
+  display: flex;
   gap: 20px;
   padding: 10px 20px;
 }
-#category > div>i{
+#category > div > i {
   width: 20px;
   font-size: 20px;
+  box-sizing: border-box;
 }
-#category > div:hover{
+#category > div:hover {
   cursor: pointer;
   background-color: rgb(250, 249, 249);
 }
@@ -114,11 +174,11 @@
   justify-content: space-between;
   align-items: center;
 }
-#category > div:last-child:hover{
- cursor: auto;
- background-color: #fff;
+#category > div:last-child:hover {
+  cursor: auto;
+  background-color: #fff;
 }
-#category > div:last-child>button{
+#category > div:last-child > button {
   border-radius: 15px;
   padding: 5px 8px;
   color: grey;
@@ -126,16 +186,15 @@
   font-size: 12px;
   background-color: transparent;
 }
-#category > div:last-child>button:hover{
+#category > div:last-child > button:hover {
   cursor: pointer;
   background-color: rgb(228, 225, 225);
 }
 
-#usersdata {
-  background-color: #fafafb;
-  position: fixed;
-  left: 20vw;
-  top: 10vh;
+/* #usersdata {
   width: 80vw;
-  height: 90vh;
-}
+  height:700px;
+  margin-left: 20vw;
+  margin-top: -100vh;
+  border: 2px solid red;
+}  */
