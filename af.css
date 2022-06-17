@@ -11,9 +11,9 @@ body{
 }
 /* navabar css goes here */
 #navbar {
-  position: sticky;
+  position: fixed;
   top: 0px;
-  width: auto;
+  width: 100vw;
   height: 10vh;
   border-bottom: 1px solid rgb(222, 202, 202);
   background-color: #fff;
@@ -33,6 +33,7 @@ body{
   display: flex;
   gap: 20px;
   height: 75%;
+  justify-content: space-evenly;
   /* overflow: hidden; */
   /* border: 2px solid red; */
 }
@@ -46,6 +47,7 @@ body{
 #search {
   height: 100%;
   border-bottom: 1px solid black;
+  width: 50%;
 }
 #search>i,#search>input{
     height: 100%;
@@ -53,7 +55,7 @@ body{
 #searchbar {
   border: none;
   margin-left: 15px;
-  width: 200px;
+  width: 70%;
   font-size: 16px;
   box-shadow: none;
 }
@@ -142,9 +144,8 @@ body{
 
 #category{
   background-color: #fff;
-  position: sticky;
+  position: fixed;
   top: 10vh;
-  left: 0px;
   width: 20vw;
   height: 90vh;
   border-right: 1px solid rgb(222, 202, 202);
@@ -191,10 +192,10 @@ body{
   background-color: rgb(228, 225, 225);
 }
 
-/* #usersdata {
+#usersdata {
   width: 80vw;
-  height:700px;
+  height:90vh;
   margin-left: 20vw;
-  margin-top: -100vh;
+  margin-top:10vh;
   border: 2px solid red;
-}  */
+} 

@@ -1,3 +1,9 @@
+// navbar js-----------------------------
+document.querySelector("#logo").addEventListener("click", logofunc)
+
+function logofunc() {
+    window.location.href = "afterlogin.html"
+}
 // serach bar css
 document.querySelector("#searchbar").addEventListener("focus",changeStyle)
 
@@ -9,6 +15,8 @@ function changeStyleBack(event){
     document.getElementById("search").style.borderBottom="1px solid black"
  }
 
+
+// category js---------------------------------
 //  category color change on click
 document.querySelector("#category>div:nth-child(1)").addEventListener("click",colorChange)
 
@@ -56,9 +64,4 @@ function colorChange5(event){
    document.querySelector("#category>div:nth-child(2)").style.color="grey";
    document.querySelector("#category>div:nth-child(3)").style.color="grey";
    document.querySelector("#category>div:nth-child(4)").style.color="grey";
-}
-document.querySelector("#logo").addEventListener("click", logofunc)
-
-function logofunc() {
-    window.location.href = "afterlogin.html"
 }
