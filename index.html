@@ -20,8 +20,8 @@
         }
 
         /* division 1 started ************************************************************************************** */
-        
-        
+
+
         #div1 {
             border: solid green;
             width: 80%;
@@ -60,7 +60,7 @@
         }
 
         #butn1 {
-            font-size:18px;
+            font-size: 18px;
             background-color: rgb(88, 70, 246);
             color: white;
             border-radius: 50px;
@@ -83,7 +83,7 @@
             margin: auto;
             border: solid green;
             text-align: center;
-            margin-bottom:100px;
+            margin-bottom: 100px;
         }
 
         #div2>div {
@@ -97,20 +97,22 @@
             font-size: 21px;
         }
 
-       
-       /* division 3 started ***************************************************************************************/
-       
+
+
+        /* division 3 started ***************************************************************************************/
+
         #div3 {
             border: solid green;
             text-align: center;
             margin-bottom: 100px;
         }
 
-        #div3>div:first-child>p{
+        #div3>div:first-child>p {
             font-family: 'Poppins', sans-serif;
             font-size: 21px;
         }
-        #div3>div:first-child>h1{
+
+        #div3>div:first-child>h1 {
             font-size: 37px;
             font-family: 'Poppins', sans-serif;
         }
@@ -132,8 +134,9 @@
             overflow: hidden;
             object-fit: cover;
         }
-        .videos:hover{
-            cursor:pointer;
+
+        .videos:hover {
+            cursor: pointer;
         }
 
         .clip {
@@ -142,9 +145,9 @@
 
 
         /* division 4 started ***************************************************************************************/
-            
-            #div4{
-                border: solid green;
+
+        #div4 {
+            border: solid green;
             width: 80%;
             margin: auto;
             display: flex;
@@ -152,21 +155,47 @@
             padding: 30px;
             gap: 30px;
             margin-bottom: 100px;
-            }
-            #div4>div{
-                border: solid yellow;
-                padding:20px;
-            }
-            #div4>div:first-child{
-                display:flex;
-                justify-content: center;
-                align-items: center;
-            }
+        }
 
-            #div4>div:first-child>img {
+        #div4>div {
+            border: solid yellow;
+            padding: 20px;
+        }
+
+        #div4>div:first-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #div4>div:first-child>img {
             width: 550px;
         }
 
+        #div4>div:last-child>div {
+            border: solid blue;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .dp {
+            margin-top: 20px;;
+            text-align: center;
+            height: 70px;
+            width: 20%;
+            overflow: hidden;
+            border:solid yellow;
+            border-radius: 56px;
+
+        }
+        .dp>img{
+            width:100%;
+        }
+
+        #div4>div:last-child>div>div:last-child>img {
+            width:50%;
+        }
     </style>
 </head>
 
@@ -252,22 +281,25 @@
             <div>
                 <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-content.png" alt="">
             </div>
-
             <div>
-                <img src="" alt="">
+                <img  class="icon"src="" alt="">
                 <h1>Transform blog posts
                     into videos with A.I.</h1>
-                    <p>Starting from a blank page is hard — and with Lumen5, you don’t have to. Our AI-powered technology helps you storyboard your ideas, fit your content to a layout, and find music and visuals that enhance your message.</p>
-                    <p><a href="signup.html">Get started for free →</a></p><br>
-                    <hr><br>
-                    <p>“Lumen5 has enabled us to create more videos and drive more traffic, while having more time to invest in other projects.”</p>
+                <p>Starting from a blank page is hard — and with Lumen5, you don’t have to. Our AI-powered technology
+                    helps you storyboard your ideas, fit your content to a layout, and find music and visuals that
+                    enhance your message.</p>
+                <p><a href="signup.html">Get started for free →</a></p><br>
+                <hr><br>
+                <p>“Lumen5 has enabled us to create more videos and drive more traffic, while having more time to invest
+                    in other projects.”</p>
+                <div>
+                    <div class="dp"><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-drew-s.jpg" alt=""></div>
                     <div>
-                        <div class="dp"><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-drew-s.jpg" alt=""></div>
-                        <div>
-                            <p> <b>Drew Sykes</b>, Social Media Director</p>
-                            <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-nc-red.png" alt="">
-                        </div>
+                        <p> <b>Drew Sykes</b>, Social Media Director</p>
+                        <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-nc-red.png"
+                            alt="">
                     </div>
+                </div>
             </div>
         </div>
     </div>
@@ -276,18 +308,18 @@
 </html>
 
 <script>
-    const clip= document.querySelectorAll(".clip");
-    clip.forEach(function(el){
-        el.addEventListener("mouseenter", function(e){
+    const clip = document.querySelectorAll(".clip");
+    clip.forEach(function (el) {
+        el.addEventListener("mouseenter", function (e) {
             el.play();
         })
 
-        el.addEventListener("mouseout", function(e){
+        el.addEventListener("mouseout", function (e) {
             el.pause();
         })
 
-        el.addEventListener("click", function(e){
-            window.location.href= el.src;
+        el.addEventListener("click", function (e) {
+            window.location.href = el.src;
         })
     })
 </script>
