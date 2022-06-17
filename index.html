@@ -117,7 +117,7 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        #viddiv {
+        #div3>div:last-child {
             width: 90%;
             margin: auto;
             border: solid blue;
@@ -133,6 +133,7 @@
             border-radius: 20px;
             overflow: hidden;
             object-fit: cover;
+            border: solid green
         }
 
         .videos:hover {
@@ -180,22 +181,193 @@
         }
 
         .dp {
-            margin-top: 20px;;
+            margin-top: 20px;
             text-align: center;
             height: 70px;
             width: 20%;
             overflow: hidden;
-            border:solid yellow;
+            border: solid yellow;
             border-radius: 56px;
 
         }
-        .dp>img{
-            width:100%;
+
+        .dp>img {
+            width: 100%;
         }
 
         #div4>div:last-child>div>div:last-child>img {
-            width:50%;
+            width: 50%;
         }
+
+
+        /* division 5 started ****************************************************************************************/
+        #div5 {
+            border: solid green;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            gap: 30px;
+            margin-bottom: 100px;
+        }
+
+        #div5>div {
+            border: solid yellow;
+            padding: 20px;
+        }
+
+        #div5>div:last-child {
+            display: flex;
+            align-items: center;
+        }
+
+        #div5>div:first-child>div {
+            border: solid blue;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        #div5>div:first-child>div>div:last-child>img {
+            width: 50%;
+        }
+
+        /* division 6 started ****************************************************************************************/
+        #div6 {
+            border: solid green;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            gap: 30px;
+            margin-bottom: 100px;
+        }
+
+        #div6>div {
+            border: solid yellow;
+            padding: 20px;
+        }
+
+        #div6>div:first-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #div6>div:first-child>img {
+            width: 550px;
+        }
+
+        #div6>div:last-child>div {
+            border: solid blue;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        #div6>div:last-child>div>div:last-child>img {
+            width: 50%;
+        }
+
+        /* division 7 started ****************************************************************************************/
+        #div7 {
+            border: solid green;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        #div7 div:first-child>div {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #div7>div:last-child {
+            width: 90%;
+            margin: auto;
+            border: solid blue;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 200px);
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .btn1 {
+            font-size: 18px;
+            background-color: transparent;
+            color: rgb(88, 70, 246);
+            border-radius: 50px;
+            padding: 15px;
+            border: 1px solid rgb(88, 70, 246);
+        }
+
+        .btn1:hover {
+            background-color: rgb(88, 70, 246);
+            cursor: pointer;
+            color: white;
+        }
+
+        .btn1:first-child {
+            font-size: 18px;
+            background-color: rgb(88, 70, 246);
+            color: white;
+            border-radius: 50px;
+            padding: 15px;
+            border: 1px solid rgb(88, 70, 246);
+        }
+
+        .btn1:first-child:hover {
+            background-color: #4527a0;
+            cursor: pointer;
+        }
+
+        /* division 8 started ****************************************************************************************/
+
+        #div8{
+            border:solid green;
+            text-align: center;
+            margin-bottom: 100px;;
+        }
+
+        
+        
+        #banner{
+            border: solid blue;
+            height:550px;
+            width:80%;
+            margin: auto;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+       #banner>div{
+        width: 300px;
+        background-color:white;
+        opacity: 90%;;
+        border-radius: 20px;
+        position:absolute;
+        width:300px;
+        padding:20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
+       #banner>img{
+        width:100%;
+        height: 100%;;
+       }
+
+       #div8>div:last-child{
+        border: solid blue;
+        display:flex;
+        width:80%;
+        margin: auto;
+        justify-content: space-around;
+        height: 50px;
+       }
+
     </style>
 </head>
 
@@ -282,7 +454,7 @@
                 <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-content.png" alt="">
             </div>
             <div>
-                <img  class="icon"src="" alt="">
+                <img class="icon" src="" alt="">
                 <h1>Transform blog posts
                     into videos with A.I.</h1>
                 <p>Starting from a blank page is hard — and with Lumen5, you don’t have to. Our AI-powered technology
@@ -293,7 +465,9 @@
                 <p>“Lumen5 has enabled us to create more videos and drive more traffic, while having more time to invest
                     in other projects.”</p>
                 <div>
-                    <div class="dp"><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-drew-s.jpg" alt=""></div>
+                    <div class="dp"><img
+                            src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-drew-s.jpg"
+                            alt=""></div>
                     <div>
                         <p> <b>Drew Sykes</b>, Social Media Director</p>
                         <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-nc-red.png"
@@ -302,7 +476,138 @@
                 </div>
             </div>
         </div>
-    </div>
+
+        <div id="div5">
+
+            <div>
+                <img class="icon" src="" alt="">
+                <h1>Content library with
+                    millions of stock
+                    photos & videos</h1>
+                <p>The Lumen5 media library gives you easy access to millions of photos, video clips, and audio files,
+                    so you always have the elements you need to create the perfect video.</p>
+                <p><a href="pricing.html">View Plans →</a></p><br>
+                <hr><br>
+                <p>“We promoted our downloadable study on top PPC skills for 2019 on social media using a short video
+                    created in Lumen5 in just 30 minutes, and decreased cost per download by 5x!”</p>
+                <div>
+                    <div class="dp"><img
+                            src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-julia-o.jpg"
+                            alt=""></div>
+                    <div>
+                        <p> <b>Julia Olennikova</b>, Product Marketing Manager</p>
+                        <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-semrush.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-media.png" alt="">
+            </div>
+        </div>
+
+        <div id="div6">
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-customize.png" alt="">
+            </div>
+            <div>
+                <img class="icon" src="" alt="">
+                <h1>Making it easy to
+                    stay on brand</h1>
+                <p>It has never been easier to stay on brand. With Lumen5 templates, you can customize each video with
+                    your unique logo, watermark, fonts, colors, and more.</p>
+                <p><a href="signup.html">Get started for free →</a></p><br>
+                <hr><br>
+                <p>“Whenever I got in touch with Lumen5 I felt like my suggestions mattered and I was being listened to.
+                    It’s like I’m co-creating in a tiny way. It’s a great feeling.”</p>
+                <div>
+                    <div class="dp"><img
+                            src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-promod-s.jpg"
+                            alt=""></div>
+                    <div>
+                        <p> <b>Promod Sharma</b>, Actuary & Insurance Consultant</p>
+                        <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-taxevity-color.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="div7">
+            <div>
+                <h1>Captivating video templates</h1>
+
+                <div id="btndiv">
+                    <button class="btn1">Content Marketing</button>
+                    <button class="btn1">Communications</button>
+                    <button class="btn1">Promotional</button>
+                    <button class="btn1">People & Culture</button>
+                    <button class="btn1">Localization</button>
+                </div>
+            </div>
+
+            <div id="viddiv">
+                <div class="videos">
+                    <video class="clip" muted
+                        src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Hydrogen%20Economy.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+                <div class="videos">
+                    <video class="clip" muted
+                        src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/siemens-content.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+                <div class="videos">
+                    <video class="clip" muted
+                        src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Responsible%20Investment.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+                <div class="videos">
+                    <video class="clip" muted
+                        src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Workplace%20Evolution.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+                <div class="videos">
+                    <video class="clip" muted
+                        src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/The%20Pandemic.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+                <div class="videos">
+                    <video class="clip" muted
+                        src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Supply%20Chain%20Resilience.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+            </div>
+        </div>
+
+        <div id="div8">
+            <h1>Customer success stories</h1>
+            <p>Discover how leading brands are getting results with Lumen5.</p>
+            <div id="banner">
+               
+                <div>
+                    <img src="https://storage.googleapis.com/lumen5-site-images/carousel-berkshire.png" alt="">
+                    <p>“We were very attracted to Lumen5 due to the fact it was very turnkey and very simple. We could train a team of people to assist in the production of video.”</p>
+                    <p>
+                        <b> Glen Wellbrock</b><br> Senior Director of Marketing
+                    </p>
+                </div>
+                <img src="https://nhs-dynamic.secure.footprint.net/images/homes/stone57134//57415479-220510.png?encoder=freeimage&progressive=true&format=jpg&backgroundColor=white&maxwidth=966&quality=90" alt="">
+            </div>
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/carousel-siemens.png" alt="">
+                <img src="https://storage.googleapis.com/lumen5-site-images/carousel-dnv.png" alt="">
+                <img src="https://storage.googleapis.com/lumen5-site-images/carousel-mitsubishi.png" alt="">
+                <img src="https://storage.googleapis.com/lumen5-site-images/carousel-ncstate.png" alt="">
+                <img src="https://storage.googleapis.com/lumen5-site-images/carousel-cms.png" alt="">
+                <img src="https://storage.googleapis.com/lumen5-site-images/carousel-mondadori.png" alt="">
+                <img src="https://storage.googleapis.com/lumen5-site-images/carousel-berkshire.png" alt="">
+            </div>
+        </div>
+
+        <div id="div9">
+
+        </div>
 </body>
 
 </html>
