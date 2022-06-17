@@ -89,7 +89,43 @@
 
         #div2>p {
             font-size: 21px;
-            ;
+        }
+
+        #div3 {
+            border: solid green;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #div3>div:first-child>p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 21px;
+        }
+        #div3>div:first-child>h1{
+            font-size: 37px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #viddiv {
+            width: 90%;
+            margin: auto;
+            border: solid blue;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            gap: 30px;
+            padding: 30px;
+
+        }
+
+        .videos {
+            border-radius: 20px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        .clip {
+            width: 100%;
         }
     </style>
 </head>
@@ -122,6 +158,53 @@
                 <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-mitsubishi-color.png"
                     alt="">
                 <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-color.png" alt="">
+            </div>
+        </div>
+
+        <div id="div3">
+            <div>
+                <h1>Captivating video templates</h1>
+                <p>Drag and drop. No experience required.</p>
+            </div>
+
+            <div id="viddiv">
+                <div class="videos">
+                    <video class="clip" src="https://storage.googleapis.com/lumen5-site-images/prev_tracer.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+                <div class="videos">
+                    <video class="clip" src="https://storage.googleapis.com/lumen5-site-images/prev_billow.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+                <div class="videos">
+                    <video class="clip" src="https://storage.googleapis.com/lumen5-site-images/prev_vertex.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+                <div class="videos">
+                    <video class="clip" src="https://storage.googleapis.com/lumen5-site-images/prev_circuit.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+                <div class="videos">
+                    <video class="clip" src="https://storage.googleapis.com/lumen5-site-images/prev_vault.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+                <div class="videos">
+                    <video class="clip" src="https://storage.googleapis.com/lumen5-site-images/prev_notice.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+                <div class="videos">
+                    <video class="clip" src="https://storage.googleapis.com/lumen5-site-images/flux_prev.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+                <div class="videos">
+                    <video class="clip" src="https://storage.googleapis.com/lumen5-site-images/unity_prev.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+                <div class="videos">
+                    <video class="clip" src="https://storage.googleapis.com/lumen5-site-images/looper_prev.mp4"
+                        type="video/mp4" loop></video>
+                </div>
+
             </div>
         </div>
     </div>
