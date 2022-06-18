@@ -1,0 +1,2 @@
+after login on the lumen5 user will be redirected to this page.
+Its kind of user space in here were he/she can create and store his video
