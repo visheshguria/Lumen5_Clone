@@ -10,6 +10,13 @@ function createfunction() {
     window.location.href = "create.html"
 }
 
+document.querySelector("#learn").addEventListener("click", createfunction);
+
+function createfunction() {
+    window.location.href = "blog.html"
+}
+
+
 document.querySelector("#pricing").addEventListener("click", pricingfunction);
 
 function pricingfunction() {
