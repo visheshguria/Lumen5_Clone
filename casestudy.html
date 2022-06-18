@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lumen|CaseStudy</title>
+    <link rel="icon" href="images/lumen5 icon.avif" type="image/x-icon">
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #master {
+            /* border: solid red; */
+            width: 70%;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* divisin 1 started ****************************************************************************************/
+
+        #div1 {
+            /* border: solid green; */
+            width: 90%;
+            margin: auto;
+            margin-bottom: 100px;
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+            padding: 20px;
+            align-items: center;
+        }
+
+
+        #div1>div:first-child {
+            padding: 30px;
+            width: 400px;
+            text-align: left;
+            padding-top: 0px;
+            ;
+        }
+
+        #div1>div:last-child {
+            width: 50%;
+            height: 400px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        #div1>div:last-child>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #div1>div:first-child>h1+p {
+            font-size: 20px;
+        }
+
+        #div1>div:first-child>h1+p+p {
+            font-size: 16px;
+            ;
+        }
+
+        #butn1 {
+            font-size: 18px;
+            background-color: rgb(88, 70, 246);
+            color: white;
+            border-radius: 50px;
+            padding: 15px;
+            border: 1px solid rgb(88, 70, 246);
+        }
+
+        #butn1:hover {
+            background-color: #4527a0;
+            cursor: pointer;
+        }
+
+        /* divisin 2 started ****************************************************************************************/
+      
+        #div2 {
+            width: 70%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 50%);
+            gap: 22px;
+            margin-top: 70px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 70px;
+        }
+
+        #div2>div {
+            width: 100%;
+        }
+
+        #div2>div>img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        #div2>div>h2 {
+            font-size: 32px;
+        }
+
+        #div2>div>p {
+            font-size: 17px;
+            line-height: 26px
+        }
+
+        #div2>div:hover {
+            cursor: pointer;
+        }
+
+        /* divisin 3 started ****************************************************************************************/
+
+        #div3 {
+            width: 90%;
+            margin: auto;
+            color: white;
+            border-radius: 20px;
+            background-color: rgb(88, 70, 246);
+            /* border: solid yellow; */
+            padding: 2%;
+            margin-bottom: 100px;
+
+        }
+
+        #div3>div {
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            /* border: solid yellow; */
+            padding: 2%;
+        }
+
+        #div3>div>p {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        #div3>div>button {
+            background-color: white;
+            margin: auto;
+
+        }
+
+        #div3>div>button:hover {
+            background-color: #4527a0;
+        }
+
+        #butn2 {
+            font-size: 18px;
+            background-color: rgb(88, 70, 246);
+            color: rgb(88, 70, 246);
+            border-radius: 50px;
+            padding: 15px;
+            border: 1px solid rgb(88, 70, 246);
+        }
+
+        #butn2:hover {
+            background-color: #4527a0;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <div id="logo">
+            <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" alt="">
+        </div>
+        <div id="content">
+            <p id="create">Create</p>
+            <p id="pricing">Pricing</p>
+            <p id="enterprise">Enterprise</p>
+            <p id="casestudy">Case studies</p>
+            <p id="learn">Learn</p>
+            <div>
+                <button id="btn1">Login</button>
+                <button id="btn2">Sign up</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="master">
+        <h1>Case Studies & Customer Stories</h1>
+
+
+        <div id="div1">
+            <div>
+                <h1>How Siemens Transformed Digital Communications With Lumen5</h1>
+                <p>“With the traditional agency, the time is usually about one week. But with Lumen5, it’s cut down from
+                    weeks to hours.”</p>
+                <p>—Michelle Hsiao, Visual Content Director at Siemens AG</p>
+                <button id="butn1">Read Case Study</button>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/5ltrds677kah/6bmIUsDjceTBBuLyIlQtPd/b4770d287c2a1e21de19eab7efeec52f/siemens1.png?w=800"
+                    alt="">
+            </div>
+        </div>
+
+
+
+        <div id="div2">
+            <div id="div-child1">
+                <img src="https://images.ctfassets.net/5ltrds677kah/6bmIUsDjceTBBuLyIlQtPd/b4770d287c2a1e21de19eab7efeec52f/siemens1.png?w=400"
+                    alt="">
+                <h2>Siemens</h2>
+                <p>How Siemens Transformed Digital Communications With Lumen5</p>
+            </div>
+            <div id="div-child2">
+                <img src="https://images.ctfassets.net/5ltrds677kah/5Yp4i7R522ebbvbJXtnwS/c35344519394d88875664257119c8880/berkshire4.png?w=400"
+                    alt="">
+                <h2>Berkshire Hathaway</h2>
+                <p>How Berkshire Hathaway HomeServices created 500 videos in 10 months</p>
+            </div>
+            <div id="div-child3">
+                <img src="https://images.ctfassets.net/5ltrds677kah/4CEMG9nD5szpcNtznePJWx/57c08b81180c494eed8c0021ce72924a/mondadori1.png?w=400"
+                    alt="">
+                <h2>Mondadori</h2>
+                <p>Learn how Mondadori doubled social media engagement and tripled their video views with Lumen5.</p>
+            </div>
+            <div id="div-child4">
+                <img src="https://images.ctfassets.net/5ltrds677kah/6qQh4D8FV5Tldbgr1D2XOc/278756ab5351d4952fe7ce26d72a7f3c/cms1.png?w=400"
+                    alt="">
+                <h2>CMS Law</h2>
+                <p>How Lumen5 is helping CMS get in front of their audience and reach their video marketing goals
+
+                </p>
+            </div>
+            <div id="div-child5">
+                <img src="https://images.ctfassets.net/5ltrds677kah/1PZVc3Lm5w8CdYIROtKYdQ/024aa5c270749e239a4603207f10667d/ncstate1.png?w=400"
+                    alt="">
+                <h2>NC State University</h2>
+                <p>How Lumen5 is helping NC State University boost their online presence and drive more traffic</p>
+            </div>
+            <div id="div-child6"> <img
+                    src="https://images.ctfassets.net/5ltrds677kah/sHpNEfrQNeXZZPBN9SqAY/8a7485933bddc3ab99d832342f9b794f/taxevity1.png?w=400"
+                    alt="">
+                <h2>Taxevity</h2>
+                <p>How Lumen5 is helping Taxevity with brand consistency</p>
+            </div>
+            <div id="div-child7"> <img
+                    src="https://images.ctfassets.net/5ltrds677kah/1vY85VxpSTeHf5v8JHpGTj/9324f772f8a894e54243862414863c7f/mitsubishi1.png?w=400"
+                    alt="">
+                <h2>Mitsubishi</h2>
+                <p>How Lumen5 is helping MHI expand their content strategy and speed up their workflow</p>
+            </div>
+            <div id="div-child8"> <img
+                    src="https://images.ctfassets.net/5ltrds677kah/7IVEpPjwhpbvaW9GLk9okQ/457f4058deb29b711941ef66dfcff7e6/dnv1.png?w=400"
+                    alt="">
+                <h2>DNV</h2>
+                <p>How Lumen5 helped DNV GL level up their social media game</p>
+            </div>
+        </div>
+
+
+
+
+        <div id="div3">
+            <div>
+                <h1>Join 800,000+ companies that are using Lumen5 to tell their stories.</h1>
+                <p>Lumen5 is a video creation software that helps marketers, publishers, and brands create video content
+                    in
+                    a
+                    breeze, without any technical expertise.</p>
+                <button id="butn2">Sign up free</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div id="footer">
+
+        <div id="first">
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-white.png" alt="">
+                <p>Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you create professional
+                    video content in minutes.</p>
+            </div>
+        </div>
+        <div id="second">
+            <div>
+                <h4>EXPLORE</h4>
+                <p>About</p>
+                <p>Features</p>
+                <p>Careers</p>
+                <p>LinkedIn</p>
+                <p>Support</p>
+                <p>Community group</p>
+            </div>
+            <div>
+                <h4>VIDEO TOOLS</h4>
+                <p>Add Text to Video</p>
+                <p>Cut Video</p>
+                <p>Merge Video</p>
+                <p>Compress Video</p>
+                <p>Resize Video</p>
+                <p>See all</p>
+            </div>
+            <div>
+                <h4>VIDEO CREATORS</h4>
+                <p>Video Editor</p>
+                <p>Photo Video Maker</p>
+                <p>Facebook Video Maker</p>
+                <p>YouTube Intro Maker</p>
+                <p>Instagram Video Maker</p>
+                <p>See all</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom">
+        <div>
+            <div>Copyright © 2022 Lumen5</div>
+            <div>Terms of Use & Privacy Policy</div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+    //Navbar
+
+    document.querySelector("#logo img").addEventListener("click", logofunc)
+
+    function logofunc() {
+        window.location.href = "index.html"
+    }
+
+    document.querySelector("#create").addEventListener("click", createfunction);
+
+    function createfunction() {
+        window.location.href = "create.html"
+    }
+
+    document.querySelector("#learn").addEventListener("click", learnfunction);
+
+    function learnfunction() {
+        window.location.href = "blog.html"
+    }
+
+
+    document.querySelector("#pricing").addEventListener("click", pricingfunction);
+
+    function pricingfunction() {
+        window.location.href = "pricing.html"
+    }
+
+    document.querySelector("#enterprise").addEventListener("click", enterprisefunction);
+
+    function enterprisefunction() {
+        window.location.href = "enterprise.html"
+    }
+
+    document.querySelector("#casestudy").addEventListener("click", casefunction);
+
+    function casefunction() {
+        window.location.href = "casestudy.html"
+    }
+
+    document.querySelector("#btn1").addEventListener("click", loginfunction);
+
+    function loginfunction() {
+        window.location.href = "login.html"
+    }
+
+    document.querySelector("#btn2").addEventListener("click", signupfunction);
+
+    function signupfunction() {
+        window.location.href = "signup.html"
+    }
+
+    //Div
+    document.getElementById("div-child1").addEventListener("click", function () {
+        window.location.href = "https://lumen5.com/case-studies/siemens";
+    });
+    document.getElementById("div-child2").addEventListener("click", function () {
+        window.location.href = "https://lumen5.com/case-studies/berkshirehathawayhomeservicescaliforniaproperties";
+    });
+    document.getElementById("div-child3").addEventListener("click", function () {
+        window.location.href = "https://lumen5.com/case-studies/mondadori";
+    });
+    document.getElementById("div-child4").addEventListener("click", function () {
+        window.location.href = "https://lumen5.com/case-studies/cms";
+    });
+    document.getElementById("div-child5").addEventListener("click", function () {
+        window.location.href = "https://lumen5.com/case-studies/nc-state";
+    });
+    document.getElementById("div-child6").addEventListener("click", function () {
+        window.location.href = "https://lumen5.com/case-studies/taxevity";
+    });
+    document.getElementById("div-child7").addEventListener("click", function () {
+        window.location.href = "https://lumen5.com/case-studies/mhi";
+    });
+    document.getElementById("div-child8").addEventListener("click", function () {
+        window.location.href = "https://lumen5.com/case-studies/dnvgl";
+    });
+
+
+
+    document.querySelector("#butn1").addEventListener("click", casefunc)
+
+    function casefunc() {
+        window.location.href = "https://lumen5.com/case-studies/siemens"
+    }
+
+    document.querySelector("#butn2").addEventListener("click", sgnfunc)
+
+    function sgnfunc() {
+        window.location.href = "signup.html"
+    }
+
+
+
+
+
+</script>
