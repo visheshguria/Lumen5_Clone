@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing</title>
     <link rel="icon" href="image\lumen5 icon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="navbar.css" />
+
+      <!-- <link rel="stylesheet" href="navbar.css" /> -->
+
     <style>
         body{
             font-family: 'Poppins', sans-serif;
@@ -239,7 +241,7 @@
             <h1>$0</h1>
             <p>forever free</p>
             <div>
-                <button>Get started</button>
+                <button class="btnn">Get started</button>
             </div>
         </div>
         <div>
@@ -248,7 +250,7 @@
             <h1>$79</h1>
             <p>per month</p>
             <div>
-                <button>Get started</button>
+                <button class="btnn">Get started</button>
             </div>
         </div>
         <div>
@@ -257,7 +259,7 @@
             <h1>$199</h1>
             <p>for professional video storytellers</p>
             <div>
-                <button>Get started</button>
+                <button class="btnn">Get started</button>
             </div>
         </div>
         <div>
@@ -265,7 +267,7 @@
             <p>For casual video enthusiasts</p>
             <h1>Custom</h1>
             <div>
-                <button>Learn more</button>
+                <button class="btnn">Learn more</button>
             </div>
         </div>
 
@@ -273,8 +275,8 @@
 
     <div class="heading">
         <p>Over 6 million videos created by thousands of businesses</p>
-        <button>Compare plans</button>
-        <button>Get started today</button>
+        <button class="btnn">Compare plans</button>
+        <button class="btnn">Get started today</button>
     </div>
     <div id="screen">
         <div id="members">
@@ -332,22 +334,22 @@
         <div>
             <h1>Starter</h1>
             <p>$79 USD/month</p>
-            <button>Get started</button>
+            <button class="btnn">Get started</button>
         </div>
         <div>
             <h1>Starter</h1>
             <p>$79 USD/month</p>
-            <button>Get started</button>
+            <button class="btnn">Get started</button>
         </div>
         <div>
             <h1>Starter</h1>
             <p>$79 USD/month</p>
-            <button>Get started</button>
+            <button class="btnn">Get started</button>
         </div>
         <div>
             <h1>Starter</h1>
             <p>$79 USD/month</p>
-            <button>Get started</button>
+            <button class="btnn">Get started</button>
         </div>
     </div>
     <hr>
@@ -652,7 +654,7 @@
             <p>Lumen5 is a video creation software that helps marketers, publishers, and brands create video content in
                 a
                 breeze, without any technical expertise.</p>
-            <button>Sign up free</button>
+            <button class="btnn">Sign up free</button>
         </div>
 
     </div>
@@ -703,11 +705,15 @@
         window.location.href = "signup.html"
     }
     
-     document.querySelector("button").addEventListener("click", myfunction)
+  let btnn= document.querySelectorAll (".btnn")
+    btnn.forEach(function(el){ 
+    el.addEventListener("click",function(){
+        window.location.href = "payment.html";
+    })
     
-      function myfunction() {
-        
-      }
+  });
+  
+     
 
 
 
