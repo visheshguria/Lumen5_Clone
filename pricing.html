@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="icon" href="image\lumen5 icon.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="navbar.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .heading {
+            margin: auto;
+            text-align: center;
+            /* border: 1px solid; */
+            /* width: 35%;
+            font-weight: 200;
+            font-family:Poppins, sans-serif; */
+        }
+
+        #container {
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            margin: auto;
+            /* border: 1px solid; */
+        }
+
+        #container>div {
+            display: flex;
+            border: 1px solid rgb(200, 198, 198);
+            width: 80%;
+            height: 300px;
+            padding: 10px;
+            border-radius: 10px;
+            padding-bottom: 30px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        }
+
+        #shead {
+            margin: auto;
+
+        }
+
+        #screen {
+            width: 100%;
+            padding-bottom: 20px;
+            margin: auto;
+            background-color: rgb(241, 236, 236);
+
+
+        }
+
+        #members {
+            width: 70%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: repeat(2, 300px);
+            /* border: 1px solid red; */
+            gap: 30px;
+            margin: 50px auto 70px auto;
+
+
+        }
+
+        #members>div {
+            display: grid;
+            padding: 30px;
+            text-align: center;
+            background-color: white;
+            margin-top: 50px;
+            border-radius: 5px;
+
+        }
+
+        #members>div>p {
+            line-height: 30px;
+        }
+
+        #members>div>p:last-child {
+            color: grey;
+            font-weight: bold;
+
+        }
+
+        img {
+            width: 80px;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        #plan {
+            width: 70%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto;
+            /* border: 1px solid red; */
+            margin: auto;
+            gap: -20px;
+        }
+
+        #plan>div {
+            display: grid;
+            /* grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: repeat(2, 300px); */
+            /* border: 1px solid red; */
+            padding: 10px;
+            text-align: center;
+            justify-content: space-around;
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            border-radius: 20px;
+            color: rgb(88, 70, 246);
+            border-color: rgb(88, 70, 246);
+            border: 1px solid;
+        }
+
+        button:hover {
+            background-color: rgb(88, 70, 246);
+            color: white;
+        }
+
+        table {
+            margin: auto;
+            border-spacing: 40px;
+            font-size: 20px;
+        }
+
+        .head {
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #fffde7;
+        }
+
+        #headandp {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 30px;
+            margin: auto;
+        }
+
+        #headandp>div {
+            width: 90%;
+            margin: auto;
+        }
+
+        #headandp>div>p {
+            font-size: 20px;
+        }
+
+        #box {
+            width: 70%;
+            height: 400px;
+            border: 1px solid rgb(88, 70, 246);
+            margin: auto;
+            color: white;
+            border-radius: 20px;
+            background-color: rgb(88, 70, 246);
+        }
+
+        #box>div {
+            width: 50%;
+            margin: 8% auto;
+        }
+
+        #box>div>p {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        #box>div>button {
+            /* justify-content: center;
+            align-items: center; */
+            margin: auto;
+            margin-left: 40%;
+        }
+
+        #container>div:last-child>div {
+            margin-top: 50px;
+        }
+
+        button+button {
+            background-color: rgb(88, 70, 246);
+            color: white;
+        }
+
+        .tick {
+            color: green
+        }
+
+        .heading>p:first-child {
+            font-family: Poppins, sans-serif;
+            font-weight: 400;
+            line-height: 43px;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" alt="">
+        </div>
+        <div id="content">
+            <p id="create">Create</p>
+            <p id="pricing">Pricing</p>
+            <p id="enterprise">Enterprise</p>
+            <p id="casestudy">Case studies</p>
+            <p id="learn">Learn</p>
+            <div>
+                <button id="btn1">Login</button>
+                <button id="btn2">Sign up</button>
+            </div>
+        </div>
+    </div>
+    <div class="heading">
+        <p>PRICING</p>
+        <h1>Plans for your video content creation strategy</h1>
+    </div>
+    <div id="container">
+        <div>
+            <h2>Community</h2>
+            <p>For casual video enthusiasts</p>
+            <h1>$0</h1>
+            <p>forever free</p>
+            <div>
+                <button class="btnn">Get started</button>
+            </div>
+        </div>
+        <div>
+            <h2>Starter</h2>
+            <p>For individual content creators</p>
+            <h1>$79</h1>
+            <p>per month</p>
+            <div>
+                <button class="btnn">Get started</button>
+            </div>
+        </div>
+        <div>
+            <h2>Professional</h2>
+            <p>For professiobal video storytellers</p>
+            <h1>$199</h1>
+            <p>for professional video storytellers</p>
+            <div>
+                <button class="btnn">Get started</button>
+            </div>
+        </div>
+        <div>
+            <h2>Community</h2>
+            <p>For casual video enthusiasts</p>
+            <h1>Custom</h1>
+            <div>
+                <button id="blog">Learn more</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="heading">
+        <p>Over 6 million videos created by thousands of businesses</p>
+        <button class="btnn">Compare plans</button>
+        <button class="btnn">Get started today</button>
+    </div>
+    <div id="screen">
+        <div id="members">
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/comment-darren.png" alt="Error">
+                <p>"A member from our ProBlogger group created a video using Lumen5 and published it on Facebook. In 24
+                    hours
+                    the video got <b> 300,000 views</b>, just using this little tool."</p>
+                <p>DARREN ROWSE</p>
+            </div>
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/comment-nicholas.png" alt="Error">
+                <p>"By using Lumen5, we increased our Facebook engagements by 448%, and boosted our reach dramatically.
+                    Our page
+                    grew from 5,000 to 23,000 likes within a week!"</p>
+                <p>NICHOLAS YANG</p>
+            </div>
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/comment-tova.png" alt="Error">
+                <p>"My first video already got over 650,000 views on my facebook page. It is an amazing program and I’m
+                    really
+                    impressed! It made converting a blog post into a video so easy."</p>
+                <p>TOVA LEIGH</p>
+            </div>
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/comment-lauren.png" alt="Error">
+                <p>"I created a video using an older blog post and it's been a huge hit! Great way to freshen up and
+                    share
+                    things again—170,000 views and climbing!"</p>
+                <p>LAUREN CASPER</p>
+            </div>
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/comment-steve.png" alt="Error">
+                <p>"Lumen5 is fantastic! I made a video and now it has gone viral! It has 22,000 views from a reach of
+                    65,000.
+                    No advertising. No promotion."</p>
+                <p>STEVE LAST</p>
+            </div>
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/comment-kaylene.png" alt="Error">
+                <p>"My Lumen5 video went viral with over3 million reach and it grew my page from 1500 to 5000 likes! I’m
+                    making
+                    these for all my top posts."</p>
+                <p>KAYLENE GEORGE</p>
+            </div>
+        </div>
+    </div>
+    <div class="heading">
+        <p>Choose the plan that's right for you </p>
+    </div>
+    <div id="plan">
+        <div>
+
+        </div>
+        <div>
+            <h1>Starter</h1>
+            <p>$79 USD/month</p>
+            <button class="btnn">Get started</button>
+        </div>
+        <div>
+            <h1>Starter</h1>
+            <p>$79 USD/month</p>
+            <button class="btnn">Get started</button>
+        </div>
+        <div>
+            <h1>Starter</h1>
+            <p>$79 USD/month</p>
+            <button class="btnn">Get started</button>
+        </div>
+        <div>
+            <h1>Starter</h1>
+            <p>$79 USD/month</p>
+            <button class="btnn">Get started</button>
+        </div>
+    </div>
+    <hr>
+    <table>
+        <tr>
+            <td class="head">Usage</td>
+        </tr>
+        <tr>
+            <td title="Limit on the number of videos you can download or share each month">Videos per month</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td title="Create multiple customization profiles for different saved templates or clients">Saved templates
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>3</td>
+            <td>Custom</td>
+        </tr>
+        <tr>
+            <td title="Set up multiple dashboard for diffferent clients or teams">Workspaces</td>
+            <td>1</td>
+            <td>1</td>
+            <td>3</td>
+            <td>Custom</td>
+        </tr>
+        <tr>
+            <td title="Automatically create video drafts from RSS feeds">Instant videos</td>
+            <td>1</td>
+            <td>1</td>
+            <td>10</td>
+            <td>Custom</td>
+        </tr>
+        <tr>
+            <td>Team members</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>Custom</td>
+        </tr>
+        <tr>
+            <td>Brand kits</td>
+            <td>0</td>
+            <td>1</td>
+            <td>3</td>
+            <td>Custom</td>
+        </tr>
+        <tr>
+            <td>Translations</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td class="head">Rendering</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>720p</td>
+            <td>1080p</td>
+            <td>1080p</td>
+            <td>1080p</td>
+        </tr>
+        <tr>
+            <td>Landscape</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Square</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Vertical</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td class="head">Branding</td>
+        </tr>
+        <tr>
+            <td title="Show your logo and a call-to-action at the end of your videos">Branded outro</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td title="Choose from over 25+ popular templats designed to help you stand out">Popular templates</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td title="Upload your own image or animation as the ending sequence of your videos">Custom outro</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td title="Customize existing templates by choosing from 35+ popular fonts">Custom fonts</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td title="Customize existing templateds with your brand colors">Custom colors</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td title="Upload and display your watermark in the corner throughout your videos">Watermark upload</td>
+            <td>--</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td title="Upload and use fonts that matches your brand and vibe">Upload your own fonts</td>
+            <td>--</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td title="Bespoke templates created for you by our in-house designers">Custom templates</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+
+        <tr>
+            <td class="head">Media</td>
+        </tr>
+        <tr>
+            <td>Millions of free-to-use videos and images</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Upload your own videos & photos</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Upload your own audio tracks</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Unlimited premium media </td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Exclusive media marketplace </td>
+            <td>--</td>
+            <td>--</td>
+            <td>25/month</td>
+            <td>Custom</td>
+        </tr>
+        <tr>
+            <td>Record your own voiceover</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Icons</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Upload your own custom icons</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+
+        <tr>
+            <td class="head">Team management</td>
+        </tr>
+        <tr>
+            <td>Brand management</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Team permissions</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Workspace management</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Two-factor authentication</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Single sign-on</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+
+        <tr>
+            <td class="head">Support</td>
+        </tr>
+        <tr>
+            <td>Help center access</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Email support</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Customized support</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td class="tick">&#10003;</td>
+        </tr>
+    </table>
+
+    <div class="heading">
+        <p>A few frequently asked questions</p>
+    </div>
+    <div id="headandp">
+        <div>
+            <h2>What if I only need Lumen5 for a set amount of time?</h2>
+            <p>That's fine! You can cancel your account anytime.</p>
+        </div>
+        <div>
+            <h2>What happens to my videos if I cancel?</h2>
+            <p>All the videos you create are yours to keep forever and ever</p>
+        </div>
+        <div>
+            <h2>Do you have a non-profit discount?</h2>
+            <p>We do. Contact us for more information.</p>
+        </div>
+        <div>
+            <h2>How do I pay for my plan?</h2>
+            <p>You can pay with Visa, Mastercard, and American Express. All prices are in USD. Invoiced billing is
+                available
+                on the Enterprise plan.</p>
+        </div>
+    </div>
+
+
+    <div id="box">
+        <div>
+            <h1>Join 800,000+ companies that are using Lumen5 to tell their stories.</h1>
+            <p>Lumen5 is a video creation software that helps marketers, publishers, and brands create video content in
+                a
+                breeze, without any technical expertise.</p>
+            <button class="btnn">Sign up free</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    document.querySelector("#logo img").addEventListener("click", logofunc)
+
+    function logofunc() {
+        window.location.href = "index.html"
+    }
+
+    document.querySelector("#create").addEventListener("click", createfunction);
+
+    function createfunction() {
+        window.location.href = "create.html"
+    }
+
+    document.querySelector("#pricing").addEventListener("click", pricingfunction);
+
+    function pricingfunction() {
+        window.location.href = "pricing.html"
+    }
+
+    document.querySelector("#enterprise").addEventListener("click", enterprisefunction);
+
+    function enterprisefunction() {
+        window.location.href = "enterprise.html"
+    }
+
+    document.querySelector("#casestudy").addEventListener("click", casefunction);
+
+    function casefunction() {
+        window.location.href = "casestudy.html"
+    }
+
+    document.querySelector("#btn1").addEventListener("click", loginfunction);
+
+    function loginfunction() {
+        window.location.href = "login.html"
+    }
+
+    document.querySelector("#btn2").addEventListener("click", signupfunction);
+
+    function signupfunction() {
+        window.location.href = "signup.html"
+    }
+    document.querySelector("#learn").addEventListener("click", learnfunction);
+
+    function learnfunction() {
+        window.location.href = "blog.html"
+    }
+
+
+    let btnn = document.querySelectorAll(".btnn")
+    btnn.forEach(function (el) {
+        el.addEventListener("click", function () {
+            window.location.href = "payment.html";
+        })
+
+    });
+
+    document.querySelector("#blog").addEventListener("click", blogfunction);
+    function blogfunction() {
+        window.location.href = "blog.html";
+    }
+
+
+
+
+
+
+</script>
