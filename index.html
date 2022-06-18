@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumen5 - Video Maker | Create Videos Online in Minutes</title>
+    <link rel="icon" href="images/lumen5 icon.avif" type="image/x-icon"> 
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
@@ -380,6 +383,8 @@
             /* border: solid green; */
             padding: 30px;
             text-align: center;
+            margin-bottom: 100px;
+            ;
 
         }
 
@@ -414,10 +419,78 @@
         #div9>div>div>p {
             padding-left: 20px;
         }
+
+        /* division 10 started *************************************************************************************************/
+        #div10 {
+            width: 90%;
+            margin: auto;
+            color: white;
+            border-radius: 20px;
+            background-color: rgb(88, 70, 246);
+            /* border: solid yellow; */
+            padding: 2%;
+            margin-bottom: 100px;
+            ;
+
+        }
+
+        #div10>div {
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            /* border: solid yellow; */
+            padding: 2%;
+        }
+
+        #div10>div>p {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        #div10>div>button {
+            background-color: white;
+            margin: auto;
+
+        }
+
+        #div10>div>button:hover {
+            background-color: #4527a0;
+        }
+
+        #butn2 {
+            font-size: 18px;
+            background-color: rgb(88, 70, 246);
+            color: rgb(88, 70, 246);
+            border-radius: 50px;
+            padding: 15px;
+            border: 1px solid rgb(88, 70, 246);
+        }
+
+        #butn2:hover {
+            background-color: #4527a0;
+            cursor: pointer;
+            color:white
+        }
     </style>
 </head>
 
 <body>
+    <div id="navbar">
+        <div id="logo">
+            <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" alt="">
+        </div>
+        <div id="content">
+            <p id="create">Create</p>
+            <p id="pricing">Pricing</p>
+            <p id="enterprise">Enterprise</p>
+            <p id="casestudy">Case studies</p>
+            <p id="learn">Learn</p>
+            <div>
+                <button id="btn1">Login</button>
+                <button id="btn2">Sign up</button>
+            </div>
+        </div>
+    </div>
     <div id="master">
         <div id="div1">
             <div>
@@ -680,12 +753,118 @@
             </div>
         </div>
 
+        <div id="div10">
+            <div>
+                <h1>Join 800,000+ companies that are using Lumen5 to tell their stories.</h1>
+                <p>Lumen5 is a video creation software that helps marketers, publishers, and brands create video content
+                    in
+                    a
+                    breeze, without any technical expertise.</p>
+                <button id="butn2">Sign up free</button>
+            </div>
+
+        </div>
+
     </div>
+
+    <div id="footer">
+       
+        <div id="first">
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-white.png" alt="">
+                <p>Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you create professional
+                    video content in minutes.</p>
+            </div>
+        </div>
+        <div id="second">
+            <div>
+                <h4>EXPLORE</h4>
+                <p>About</p>
+                <p>Features</p>
+                <p>Careers</p>
+                <p>LinkedIn</p>
+                <p>Support</p>
+                <p>Community group</p>
+            </div>
+            <div>
+                <h4>VIDEO TOOLS</h4>
+                <p>Add Text to Video</p>
+                <p>Cut Video</p>
+                <p>Merge Video</p>
+                <p>Compress Video</p>
+                <p>Resize Video</p>
+                <p>See all</p>
+            </div>
+            <div>
+                <h4>VIDEO CREATORS</h4>
+                <p>Video Editor</p>
+                <p>Photo Video Maker</p>
+                <p>Facebook Video Maker</p>
+                <p>YouTube Intro Maker</p>
+                <p>Instagram Video Maker</p>
+                <p>See all</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom">
+        <div>
+            <div>Copyright © 2022 Lumen5</div>
+            <div>Terms of Use & Privacy Policy</div>
+        </div>
+    </div>
+
 </body>
 
 </html>
 
 <script>
+        document.querySelector("#logo img").addEventListener("click", logofunc)
+
+function logofunc() {
+    window.location.href = "index.html"
+}
+
+document.querySelector("#create").addEventListener("click", createfunction);
+
+function createfunction() {
+    window.location.href = "create.html"
+}
+
+document.querySelector("#pricing").addEventListener("click", pricingfunction);
+
+function pricingfunction() {
+    window.location.href = "pricing.html"
+}
+
+document.querySelector("#enterprise").addEventListener("click", enterprisefunction);
+
+function enterprisefunction() {
+    window.location.href = "enterprise.html"
+}
+
+document.querySelector("#casestudy").addEventListener("click", casefunction);
+
+function casefunction() {
+    window.location.href = "casestudy.html"
+}
+
+document.querySelector("#btn1").addEventListener("click", loginfunction);
+
+function loginfunction() {
+    window.location.href = "login.html"
+}
+
+document.querySelector("#btn2").addEventListener("click", signupfunction);
+
+function signupfunction() {
+    window.location.href = "signup.html"
+}
+
+
+
+
+
     const clip = document.querySelectorAll(".clip");
     clip.forEach(function (el) {
         el.addEventListener("mouseenter", function (e) {
@@ -699,5 +878,13 @@
         el.addEventListener("click", function (e) {
             window.location.href = el.src;
         })
+    })
+
+    document.querySelector("#butn1").addEventListener("click", function () {
+        window.location.href="signup.html"
+    })
+
+    document.querySelector("#butn2").addEventListener("click", function () {
+        window.location.href="signup.html"
     })
 </script>
