@@ -4,6 +4,11 @@ document.querySelector("#logo").addEventListener("click", logofunc)
 function logofunc() {
     window.location.href = "afterlogin.html"
 }
+// upgrade
+document.querySelector("#upgrade").addEventListener("click",function(){
+   window.location.href="pricing.html"
+})
+
 // serach bar css
 document.querySelector("#searchbar").addEventListener("focus",changeStyle)
 
@@ -65,3 +70,4 @@ function colorChange5(event){
    document.querySelector("#category>div:nth-child(3)").style.color="grey";
    document.querySelector("#category>div:nth-child(4)").style.color="grey";
 }
+
