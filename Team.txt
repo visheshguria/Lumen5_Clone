@@ -1,0 +1,6 @@
+Vishesh Guria      ---------- homepage, navbar, footer
+Aditya Pratap Singh---------- after login page 
+Dileep Kumar Yadav ---------- pricing page
+Swagat Sahu				 ---------- login  & signup 
+Ramkrashna
+Swati						 ---------- enterprise page
