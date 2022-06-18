@@ -267,7 +267,7 @@
             <p>For casual video enthusiasts</p>
             <h1>Custom</h1>
             <div>
-                <button class="btnn">Learn more</button>
+                <button id="blog">Learn more</button>
             </div>
         </div>
 
@@ -712,6 +712,11 @@
     })
     
   });
+
+  document.querySelector("#blog").addEventListener("click", blogfunction);
+  function blogfunction (){
+    window.location.href = "blog.html";
+  }
   
      
 
