@@ -10,9 +10,9 @@ function createfunction() {
     window.location.href = "create.html"
 }
 
-document.querySelector("#learn").addEventListener("click", createfunction);
+document.querySelector("#learn").addEventListener("click", learnfunction);
 
-function createfunction() {
+function learnfunction() {
     window.location.href = "blog.html"
 }
 
