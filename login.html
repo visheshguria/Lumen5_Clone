@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+   <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    .container{
+      display: flex;
+      margin: auto; 
+      gap: 90px;
+     }
+     .logBox{
+      width: 40%;
+    }
+    .logBox > h1{
+      font-size: 45px;
+      margin-top: 22px;
+      font-weight: bold;
+      margin-left: 22px;
+      line-height: 100px;
+      user-select: none;
+      border-radius: 15px 15px 0 0;
+    }
+    .logBox > form{
+      margin-top: 52px;
+      padding: 10px 30px 50px 30px;
+    }
+    .logBox > form >.field{
+      height: 50px;
+      width: 100%;
+      margin-top: 90px;
+      position: relative;
+    }
+    .logBox >form >.field >input{
+      height: 100%;
+      width: 100%;
+      outline: none;
+      font-size: 17px;
+      padding-left: 20px;
+      border: none;
+      border-bottom: 1px solid gray;
+      transition: all 0.3s ease;
+    }
+    .logBox >form >.field >input:focus,
+    form >.field >input:valid{
+      border-color: #4158d0;
+    }
+    .logBox >form >.field >label{
+      position: absolute;
+      top: 20%;
+      left: 20px;
+      color: #999999;
+      font-weight: 400;
+      font-size: 17px;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+    form >.field >input:focus ~ label,
+    form >.field >input:valid ~ label{
+      top: 0%;
+      font-size: 16px;
+      color: #5846f6;
+      background: white;
+      transform: translateY(-50%);
+    }
+    form >.content{
+      display: flex;
+      width: 100%;
+      height: 50px;
+      font-size: 16px;
+      align-items: center;
+      justify-content: space-around;
+    }
+    form >.content >.pass>a{
+      margin-left: 400px;
+      font-size: 14px;
+      color: gray;
+    }
+    form >.btn >input[type="submit"]{
+      color: white;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      padding-left: 0;
+      margin-top: 0px;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+      background: #5846f6;
+      border-radius: 22px;
+    }
+    form >.btn >input[type="submit"]:hover{
+    background-color: #2c1db1;
+    }
+    form >.create{
+      font-size: 15px;
+      color: black;
+      margin-top: 37px;
+      margin-left: 12px;
+    }
+    form >.pass> a,
+    form >.create> a{
+      color: #4158d0;
+    }   
+   .imgbox{
+          width: 33%;
+          margin-left: -7px;
+          position: relative;
+          background-size: cover;
+          background-color: rgb(72, 72, 222);
+      }
+      .imgbox>img{
+          width: 100%;
+          height: 100vh;
+          opacity: 0.1;
+      }
+      .logo>img{
+          position: absolute;
+          top: 0;
+          width: 29%;
+          margin-top: 22px;
+          margin-left: 52px;
+      }
+      .logo>img+h4{
+          position: absolute;
+          top: 12%;
+          font-size: 42px;
+          width: 2px;
+          padding: 52px;
+          color: white;
+      }
+      .logo>h4+h4{
+          position: absolute;
+          top: 20%;
+          font-size: 42px;
+          padding: 52px;
+          color: white;
+      }
+      #last1{
+          position: absolute;
+          top: 29%;
+          font-size: 42px;
+          padding: 52px;
+          color: white;
+      }
+      .logo>p{
+          position: absolute;
+          top: 42%;
+          font-size: 25px;
+          width: -52px;
+          padding: 52px;
+          color: white;
+      }
+      .logo>p+p{
+          position: absolute;
+          top: 48%;
+          font-size: 25px;
+          width: -52px;
+          padding: 52px;
+          color: white;
+      }
+      #last{
+          position: absolute;
+          top:54%;
+          font-size: 25px;
+          width: -52px;
+          padding: 52px;
+          color: white;
+      }
+      .companylogo{
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: auto;
+          gap: 0px;
+          margin-left: 12%;
+      }
+      .logo>.companylogo{
+          position: absolute;
+          top: 72%;
+          font-size: 38px;
+          width: -52px;
+          color: white;
+      }
+      .companylogo>div>img{
+          width: 60%;
+      }
+      #comlogo:hover{
+        cursor: pointer;
+      }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="imgbox">
+        <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8b2ZmaWNlJTIwbWVldGluZ3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="">
+       
+        <div class="logo">
+            <img id="comlogo" src="https://storage.googleapis.com/lumen5-site-images/L5-logo/logo-white_266x156.png" alt="">
+            <h4>Supercharge</h4>
+            <h4>your content</h4>
+            <h4 id="last1">strategy</h4>
+            <p>Join 800,000+ brands</p>
+            <p>creating</p>
+            <p id="last">videos with Lumen5</p>
+            <div class="companylogo">
+                <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-seimens-white.png" alt=""></div>
+                <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sf-white.png" alt=""></div>
+                <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-merck-white.png" alt=""></div>
+                <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-white.png" alt=""></div>
+                <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-kpmg-white.png" alt=""></div>
+                <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-white.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="logBox">
+      <h1> Welcome Back!</h1>
+      <form>
+        <div class="field">
+          <input id="email" type="text" required>
+          <label>Email Address</label>
+        </div>
+        <div class="field">
+          <input id="password" type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="content">
+          <div class="pass"><a href="#">Forgot password?</a></div>
+        </div>
+        <div class="btn">
+          <input type="submit" value="Login">
+        </div>
+        <div class="create">Need a Lumen5 account?  <a id="log" href="#">Create an account</a></div>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>
+
+<script>
+    
+  let form=document.querySelector("form");
+
+  let userData=JSON.parse(localStorage.getItem("All Stored Data")) || [];
+
+  form.addEventListener("submit",function(event){
+      event.preventDefault();
+      let data={
+          name:form.name.value,
+          email:form.email.value,
+          password:form.password.value,
+      }
+      if(check_email_password(data.email,data.password)===true){
+          alert("Sign in successesfully")
+          localStorage.setItem("signData",JSON.stringify(data));
+          
+      }else{
+          alert("Invalid Email Or Password. Please check your credentials");
+      }
+  });
+
+  function check_email_password(email,password){
+      let filter=userData.filter(function(elem){
+          return elem.email===email && elem.password===password;
+      })
+      if(filter.length>0){
+          return true;
+      }else{
+          return false;
+      }
+  }
+  document.getElementById("log").addEventListener("click",function(){
+    window.location.href="signup.html";
+});
+//added home page of lorem5 here this is onclick function of lorem5 image
+document.getElementById("comlogo").addEventListener("click",function(){
+   window.location.href="https://www.youtube.com/watch?v=5qap5aO4i9A";
+});
+</script>
