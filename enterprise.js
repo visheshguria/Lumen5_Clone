@@ -254,6 +254,16 @@ document.querySelector("#btn2").addEventListener("click",function(){
 })
 
 
+document.querySelector("#butn2").addEventListener("click", function () {
+    window.location.href="signup.html"
+})
+
+document.querySelector(".Requestbtn").addEventListener("click", function () {
+    window.location.href="signup.html"
+})
+
+
+
 
 
 // slider 
