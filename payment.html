@@ -331,12 +331,9 @@
             let cvvInput=document.querySelector('.cvv-input').value;
            
             if (cardInput.length < 16 ) {
-                alert('Please enter correct card number');
+                alert('Card Number must be of 16 digits. Please check card number & Try again');
                 window.location.href = "payment.html"
-            } else if (cvvInput.length<3) {
-                alert("Please enter correct CVV ");
-                 window.location.href = "payment.html"
-            }
+            } 
             else if(monthInput=="month" ){
                 alert(" Please enter Expiry Month of card");
                 window.location.href = "payment.html"
@@ -344,6 +341,10 @@
             else if(yearInput=="year" ){
                 alert(" Please enter Expiry year of card");
                 window.location.href = "payment.html"
+            }
+            else if (cvvInput.length<3) {
+                alert("Please enter correct CVV ");
+                 window.location.href = "payment.html"
             }
             else if(cardHolder.length<=0 ){
                 alert(" Please enter Cardholder Name");
