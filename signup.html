@@ -331,10 +331,10 @@
     if (data.name == "" || data.email == "" || data.password == "") {
       event.parentNode.remove();
     }
-    if (data.password.length > 8) {
+    if (data.password.length >= 8) {
       true;
     } else {
-      alert("password must be in 8 character");
+      alert("Password Must Be Of 8 Characters");
       event.parentNode.remove();
     }
     if (data.password.search(/[0-9]/) == -1) {
