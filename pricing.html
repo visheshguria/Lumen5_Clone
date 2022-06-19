@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing</title>
-    <link rel="icon" href="image\lumen5 icon.jpg" type="image/x-icon">
+    <link rel="icon" href="images/lumen5 icon.avif" type="image/x-icon"> 
 
-      <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="navbar.css" />
 
     <style>
-        body{
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+        body {
             font-family: 'Poppins', sans-serif;
-           
+
         }
 
         .heading {
@@ -84,10 +86,12 @@
             border-radius: 5px;
 
         }
-        #members>div>p{
+
+        #members>div>p {
             line-height: 30px;
         }
-        #members>div>p:last-child{
+
+        #members>div>p:last-child {
             color: grey;
             font-weight: bold;
 
@@ -123,13 +127,13 @@
             width: 150px;
             height: 50px;
             border-radius: 20px;
-            color: rgb(88,70,246);
-            border-color: rgb(88,70,246);
-            border:1px solid;
+            color: rgb(88, 70, 246);
+            border-color: rgb(88, 70, 246);
+            border: 1px solid;
         }
 
         button:hover {
-            background-color: rgb(88,70,246);
+            background-color: rgb(88, 70, 246);
             color: white;
         }
 
@@ -167,11 +171,11 @@
         #box {
             width: 70%;
             height: 400px;
-            border: 1px solid rgb(88,70,246);
+            border: 1px solid rgb(88, 70, 246);
             margin: auto;
             color: white;
             border-radius: 20px;
-            background-color: rgb(88,70,246);
+            background-color: rgb(88, 70, 246);
         }
 
         #box>div {
@@ -196,20 +200,21 @@
         }
 
         button+button {
-            background-color: rgb(88,70,246);
+            background-color: rgb(88, 70, 246);
             color: white;
         }
-        .tick{
-            color:green
+
+        .tick {
+            color: green
         }
-        .heading>p:first-child{
+
+        .heading>p:first-child {
             font-family: Poppins, sans-serif;
             font-weight: 400;
             line-height: 43px;
             font-size: 30px;
 
         }
-   
     </style>
 </head>
 
@@ -231,7 +236,7 @@
         </div>
     </div>
     <div class="heading">
-    <p>PRICING</p>
+        <p>PRICING</p>
         <h1>Plans for your video content creation strategy</h1>
     </div>
     <div id="container">
@@ -267,7 +272,7 @@
             <p>For casual video enthusiasts</p>
             <h1>Custom</h1>
             <div>
-                <button class="btnn">Learn more</button>
+                <button id="blog">Learn more</button>
             </div>
         </div>
 
@@ -704,16 +709,27 @@
     function signupfunction() {
         window.location.href = "signup.html"
     }
-    
-  let btnn= document.querySelectorAll (".btnn")
-    btnn.forEach(function(el){ 
-    el.addEventListener("click",function(){
-        window.location.href = "payment.html";
-    })
-    
-  });
-  
-     
+    document.querySelector("#learn").addEventListener("click", learnfunction);
+
+    function learnfunction() {
+        window.location.href = "blog.html"
+    }
+
+
+    let btnn = document.querySelectorAll(".btnn")
+    btnn.forEach(function (el) {
+        el.addEventListener("click", function () {
+            window.location.href = "payment.html";
+        })
+
+    });
+
+    document.querySelector("#blog").addEventListener("click", blogfunction);
+    function blogfunction() {
+        window.location.href = "blog.html";
+    }
+
+
 
 
 

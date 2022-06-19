@@ -8,8 +8,8 @@
 }
 #nav {
   position: relative;
-  height: 13vh;
-  width: 100vw;
+  height: 70px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
@@ -17,7 +17,7 @@
   /* border: 2px solid red; */
   color: gray;
   font-weight: 500;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #nav > img {
   height: 50%;
@@ -64,7 +64,7 @@
 #dropdown ul li:hover > .dropdown-content {
   display: block;
   position: absolute;
-  width: 16vw;
+  width: 180px;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 5px;
@@ -89,8 +89,8 @@
 /* body part -----------------------------------------------*/
 #nav + h1 {
   background-color: #f0f2f5;
-  padding-top: 10vh;
-  padding-left: 2vw;
+  padding-top: 70px;
+  padding-left: 20px;
   font-weight: bolder;
 }
 
@@ -124,33 +124,27 @@
 
 /* --------------------------------------------------body part main */
 #d1 {
-  padding: 5vh 1vw 5vh 2vw;
+  padding:30px 10px 70px 20px;
   background-color: #f0f2f5;
   display: flex;
   justify-content: space-between;
 }
+#d1>div:first-child{
+  width: 52%;
+}
 #big1 {
   border-radius: 10px;
-  width: 115%;
+  width: 100%;
 }
 #big1r {
-  position: absolute;
-  width: 48%;
-  top: 98%;
-  left: 5%;
-  padding: 15px 25px;
+  width: 100%;
   /* border: 3px solid red; */
   display: flex;
   flex-direction: column;
-  background-color: #fff;
   line-height: 40px;
-  gap: 15px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 10px;
+  gap: 10px;
 }
-#big1r > h1 {
-  font-size: 30px;
-}
+
 #big1r > div {
   display: flex;
   align-items: center;
@@ -178,7 +172,7 @@ a:hover{
 }
 /* small cards  */
 #d1 > div:last-child {
-  width: 41%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   /* margin-bottom:20px ; */
@@ -198,12 +192,12 @@ a:hover{
   font-weight: bold;
 }
 .small1 > img {
-  height: 80px;
-  width: 80px;
+  height: 150px;
+  width: 150px;
   border-radius: 5px;
 }
 #d2 {
-  padding: 15vh 1vw 20vh 2vw;
+  padding: 100px 10px 140px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -224,6 +218,10 @@ a:hover{
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+.recent>div>img:hover{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 10px;
+  cursor: pointer;
 }
 .content{
   display: flex;
@@ -255,7 +253,7 @@ a:hover{
 #foot{
   background-color:black;
   color: white;
-  height: 35vh;
+  height: 220px;
 }
 #foot>div:first-child{
   height: 55%;
@@ -266,15 +264,22 @@ a:hover{
   border-bottom: 1px solid grey;
   padding: 0px 2vw;
 }
-#foot>div>div:first-child{
-  height: 35%;
+#foot>div>div{
+  height: 25%;
   width: 10%;
   /* border: 2px solid
   red; */
 }
+#foot>div>div:hover{
+  cursor: pointer;
+}
+#foot>div>div>img{
+  height: 100%;
+  width: 100%;
+}
 #foot>div>div:last-child{
   height: 35%;
-  width: 25%;
+  width: 27%;
   /* border: 2px solid
   red; */
   display: flex;
@@ -285,19 +290,18 @@ a:hover{
   font-size: 18px;
   font-weight: bold;
 }
-#foot>div:first-child>div>img{
-  height: 100%;
-  width: 100%;
-}
+
 #icon-foot{
   width: 60%;
   height: 100%;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid wheat; */
 }
 #icon-foot>a{
-  height: 100%;
-  width: 3vw;
+  height: 80%;
+  width: 40px;
   background-color: #333333;
   border-radius: 50%;
   display: flex;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,50 @@
     <title>Payment-Success</title>
     <link rel="icon" href="image\lumen5 icon.jpg" type="image/x-icon">
     <style>
-        *{
+        * {
             margin: auto;
 
         }
-        div{
+
+        div {
             margin: auto;
             width: 70%;
-            /* border: 1px solid; */
-            display:flex;
+            display: flex;
             justify-content: center;
+        }
+
+        button {
+            margin: auto;
+            width: 200px;
+            height: 70px;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: rgb(88, 70, 246);
+            display: flex;
+            color:white;
+            justify-content: center;
+            align-items: center;
+            border: transparent;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #4527a0;
         }
     </style>
 </head>
+
 <body>
     <div>
-    <img src="http://www.shikharclasses.in/wp-content/uploads/2020/04/PAYMENT-SUCCESS.png" alt="Error">
-</div>
+        <img src="http://www.shikharclasses.in/wp-content/uploads/2020/04/PAYMENT-SUCCESS.png" alt="Error">
+
+    </div>
+    <button> Go To Homepage</button>
 </body>
+
 </html>
+<script>
+    document.querySelector("button").addEventListener("click", mybutton)
+    function mybutton() {
+        window.location.href = "pricing.html"
+    }
+</script>
