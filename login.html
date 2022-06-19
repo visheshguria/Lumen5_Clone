@@ -2,13 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>Login | Lumen5</title>
+    <link rel="icon" href="images/lumen5 icon.avif" type="image/x-icon"> 
    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+
     *{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
     }
     .container{
       display: flex;
@@ -96,7 +103,7 @@
       border-radius: 22px;
     }
     form >.btn >input[type="submit"]:hover{
-    background-color: #2c1db1;
+    background-color: #4527a0;
     }
     form >.create{
       font-size: 15px;
@@ -259,7 +266,7 @@
       if(check_email_password(data.email,data.password)===true){
           alert("Sign in successesfully")
           localStorage.setItem("signData",JSON.stringify(data));
-          
+          window.location.href="afterlogin.html"
       }else{
           alert("Invalid Email Or Password. Please check your credentials");
       }
@@ -280,6 +287,6 @@
 });
 //added home page of lorem5 here this is onclick function of lorem5 image
 document.getElementById("comlogo").addEventListener("click",function(){
-   window.location.href="https://www.youtube.com/watch?v=5qap5aO4i9A";
+   window.location.href="index.html";
 });
 </script>
