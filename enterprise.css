@@ -390,7 +390,7 @@ width: 140%;
     cursor: pointer;
 }
 #div7 .btn1:hover{
-    background-color:blue !important;
+    background-color:rgb(88, 70, 246) !important;
     color: white !important;
     text-decoration: underline;
     cursor: pointer;
