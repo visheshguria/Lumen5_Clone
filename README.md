@@ -19,7 +19,7 @@ https://remarkable-chaja-5bb2dc.netlify.app/index.html
 
 4.[Swagat Sahu]
 
-- `(Login Page, SignUp Page, Case Studies Page)`
+- `(Login Page, SignUp Page, Case Studies Page, Validations)`
 
 5.[Swati Parmar]
 
