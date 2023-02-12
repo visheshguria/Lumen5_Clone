@@ -23,7 +23,7 @@ https://remarkable-chaja-5bb2dc.netlify.app/index.html
 
 5.[Swati Parmar]
 
-- `(Enterprise Page, Content Page, Video Maker Page)`
+- `(Enterprise Page, Content Page, Video Maker Page )`
 <br>
 <br>
 <h2>Landing Page</h2>
