@@ -1,4 +1,4 @@
-Lumen5 is a video creation platform designed for brands and businesses to produce engaging video content for social posts, stories, and ads. Created a clone of it with the functionalities of the original One..
+Lumen5 is a video creation platform designed for brands and businesses to produce engaging video content for social posts, stories, and ads. Created a clone of it with the functionalities of the original One...
 <br>
 https://remarkable-chaja-5bb2dc.netlify.app/index.html
 <h1>Try Now</h1>
